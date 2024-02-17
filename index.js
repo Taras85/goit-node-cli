@@ -42,6 +42,7 @@ async function invokeAction({ action, id, name, email, phone }) {
     case "update":
       const updateBiId = await updateContact(id, { name, email, phone });
       return console.log(updateBiId);
+      break;
 
     default:
       console.warn("\x1B[31m Unknown action type!");
